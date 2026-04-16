@@ -1,0 +1,68 @@
+[
+  {
+    "initials": "IZ",
+    "photo": "assets/headshots/Inti-Zlobec.jpg",
+    "name": "Prof. Dr. phil. nat. Inti Zlobec",
+    "group": "Institute for Tissue Medicine and Pathology",
+    "institute": "University of Bern",
+    "area": "Digital Pathology",
+    "expertise": "Machine Learning",
+    "tag": "Digital Pathology",
+    "profileUrl": "https://www.igmp.unibe.ch/about_us/personen/zlobec_inti/index_eng.html"
+  },
+  {
+    "initials": "MR",
+    "photo": "assets/headshots/Mauricio-Reyes.png",
+    "name": "Prof. Dr. Mauricio Reyes",
+    "group": "Medical Image Analysis Group, ARTORG",
+    "institute": "University of Bern",
+    "area": "Biomedical Imaging",
+    "expertise": "Medical Imaging",
+    "tag": "Biomedical Imaging",
+    "profileUrl": "https://www.artorg.unibe.ch/research/mia/group_members/members/prof_dr_reyes_mauricio/index_eng.html"
+  },
+  {
+    "initials": "SB",
+    "photo": "assets/headshots/sarahbrueningk.jpg",
+    "name": "Prof. Dr. Sarah Brüningk",
+    "group": "Center of AI in Radiation Oncology, UKRO",
+    "institute": "University of Bern · Inselspital",
+    "area": "Radiation Oncology",
+    "expertise": "Clinical Trials",
+    "tag": "Radiation Oncology",
+    "profileUrl": "https://radioonkologie.insel.ch/de/ueber-uns/details/person/detail/sarah-brueningk"
+  },
+  {
+    "initials": "AK",
+    "photo": "assets/headshots/Antje-Knopf.png",
+    "name": "Prof. Dr. Antje Knopf",
+    "group": "Department of Radio-Oncology",
+    "institute": "University of Bern · Inselspital · sitem-insel school",
+    "area": "Data Science",
+    "expertise": "Biostatistics",
+    "tag": "Data Science",
+    "profileUrl": "https://www.medizin.unibe.ch/ueber_uns/personen/prof_dr_knopf_antje/index_ger.html"
+  },
+  {
+    "initials": "BI",
+    "photo": "assets/headshots/Benjamin-Ineichen.png",
+    "name": "Prof. Dr. Benjamin Ineichen",
+    "group": "Medical Data Science, Department of Clinical Research",
+    "institute": "University of Bern",
+    "area": "Data Science",
+    "expertise": "Machine Learning",
+    "tag": "Data Science",
+    "profileUrl": "https://dcr.unibe.ch/about_us/personen_all_dcr_staff/ineichen_benjamin/index_eng.html"
+  },
+  {
+    "initials": "RW",
+    "photo": "assets/headshots/Roland-Wiest.jpg",
+    "name": "Prof. Dr. med. Roland Wiest",
+    "group": "Institute for Diagnostic and Interventional Neuroradiology",
+    "institute": "University of Bern · Inselspital",
+    "area": "Neuroradiology",
+    "expertise": "Medical Imaging",
+    "tag": "Neuroradiology",
+    "profileUrl": "https://neurorad.insel.ch/de/ueber-uns/details/person/detail/roland-wiest"
+  }
+]
