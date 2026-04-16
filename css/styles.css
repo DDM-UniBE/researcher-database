@@ -498,10 +498,9 @@ body {
   /* Page title — hidden on mobile */
   .page-title { display: none; }
 
-  /* Hero — more top padding */
-  .hero { padding: 64px 20px 44px; }
-  .hero h2 { font-size: 22px; margin-bottom: 12px; }
-  .hero p { font-size: 15px; margin-bottom: 32px; }
+  /* Spacing between breadcrumb dropdown and red hero block */
+  .hero-wrap { padding-top: 24px; }
+
   .mobile-breadcrumb-dropdown {
     display: block;
     background: #f5f4f2;
@@ -550,8 +549,8 @@ body {
     border-bottom: none;
   }
 
-  /* Hero */
-  .hero { padding: 48px 20px 44px; }
+  /* Hero — single rule, more top padding */
+  .hero { padding: 64px 20px 44px; }
   .hero h2 { font-size: 22px; margin-bottom: 12px; }
   .hero p { font-size: 15px; margin-bottom: 32px; }
 
@@ -683,7 +682,7 @@ body {
     transition: background 0.12s;
   }
   .mobile-menu-overlay a:hover { background: rgba(255,255,255,0.08); }
-  .mobile-menu-overlay a.active { background: rgba(255,255,255,0.18); color: white; font-weight: 500; }
+.mobile-menu-overlay a.active { background: #f0f0ee; color: #C8102E; font-weight: 400; }
   .mobile-menu-overlay a .arrow-right {
     font-size: 16px;
     opacity: 0.5;
