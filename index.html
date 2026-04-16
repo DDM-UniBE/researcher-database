@@ -630,8 +630,8 @@
         name: "Prof. Dr. phil. nat. Inti Zlobec",
         group: "Digital Pathology",
         institute: "IGMP · University of Bern",
-        area: "Digital Pathology", expertise: "Machine Learning",
-        inst: "University of Bern",
+        area: "Digital Pathology",
+        expertise: "Machine Learning",
         tag: "Digital Pathology",
         profileUrl: "#"
       },
@@ -640,8 +640,8 @@
         name: "Prof. Mauricio Reyes",
         group: "Medical Image Analysis Group",
         institute: "ARTORG · University of Bern",
-        area: "Biomedical Imaging", expertise: "Medical Imaging",
-        inst: "University of Bern",
+        area: "Biomedical Imaging",
+        expertise: "Medical Imaging",
         tag: "Biomedical Imaging",
         profileUrl: "#"
       },
@@ -650,8 +650,8 @@
         name: "Prof. Dr. Sarah Brüningk",
         group: "Center of AI in Radiation Oncology",
         institute: "UKRO · Inselspital, University of Bern",
-        area: "Radiation Oncology", expertise: "Clinical Trials",
-        inst: "Inselspital",
+        area: "Radiation Oncology",
+        expertise: "Clinical Trials",
         tag: "Radiation Oncology",
         profileUrl: "#"
       },
@@ -660,8 +660,8 @@
         name: "Prof. Dr. Antje Knopf",
         group: "Applied Data Sciences & Decision Support Systems",
         institute: "University of Bern · sitem-insel school",
-        area: "Data Science", expertise: "Biostatistics",
-        inst: "sitem-insel",
+        area: "Data Science",
+        expertise: "Biostatistics",
         tag: "Data Science",
         profileUrl: "#"
       },
@@ -670,8 +670,8 @@
         name: "Prof. Dr. Dr. Benjamin Ineichen",
         group: "Medical Data Science",
         institute: "DCR · University of Bern",
-        area: "Data Science", expertise: "Machine Learning",
-        inst: "University of Bern",
+        area: "Data Science",
+        expertise: "Machine Learning",
         tag: "Data Science",
         profileUrl: "#"
       },
@@ -680,8 +680,8 @@
         name: "Prof. Dr. med. Roland Wiest",
         group: "Institute for Diagnostic and Interventional Neuroradiology",
         institute: "Inselspital Bern",
-        area: "Neuroradiology", expertise: "Medical Imaging",
-        inst: "Inselspital",
+        area: "Neuroradiology",
+        expertise: "Medical Imaging",
         tag: "Neuroradiology",
         profileUrl: "#"
       }
@@ -702,9 +702,9 @@
                r.group.toLowerCase().includes(q) ||
                r.tag.toLowerCase().includes(q) ||
                r.institute.toLowerCase().includes(q)) &&
-        (!area || r.area      === area) &&
-        (!exp  || r.expertise === exp)  &&
-        (!inst || r.inst      === inst)
+        (!area || r.area.toLowerCase().includes(area.toLowerCase())) &&
+        (!exp  || r.expertise.toLowerCase().includes(exp.toLowerCase())) &&
+        (!inst || r.institute.toLowerCase().includes(inst.toLowerCase()))
       );
       renderGrid(filtered);
     }
