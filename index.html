@@ -17,7 +17,7 @@
     </div>
   </header>
 
-  <!-- BREADCRUMB -->
+  <!-- BREADCRUMB (desktop) -->
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <div class="inner">
       <a href="https://www.unibe.ch/facultiesinstitutes/index_eng.html" target="_blank" class="faculties">Faculties<br>&amp; Institutes</a>
@@ -27,6 +27,19 @@
       <a href="https://ddm.unibe.ch" target="_blank" class="current" style="text-decoration:none;">Department of Digital Medicine (DDM)</a>
     </div>
   </nav>
+
+  <!-- BREADCRUMB DROPDOWN (mobile only) -->
+  <div class="mobile-breadcrumb-dropdown">
+    <button class="mobile-breadcrumb-toggle" id="breadcrumbToggle" aria-expanded="false">
+      <span>Department of Digital Medicine (DDM)</span>
+      <svg viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg"><path d="M0 0l5 6 5-6z"/></svg>
+    </button>
+    <div class="mobile-breadcrumb-panel" id="breadcrumbPanel">
+      <a href="https://www.unibe.ch/facultiesinstitutes/index_eng.html" target="_blank">Faculties &amp; Institutes</a>
+      <a href="https://www.medizin.unibe.ch/index_eng.html" target="_blank">Faculty of Medicine</a>
+      <a href="https://ddm.unibe.ch" target="_blank">Department of Digital Medicine (DDM)</a>
+    </div>
+  </div>
 
   <!-- PAGE TITLE -->
   <div class="page-title">
@@ -148,7 +161,44 @@
     </div>
   </div>
 
-  <!-- JS — loaded at end of body so DOM is ready -->
+  <!-- MOBILE BOTTOM BAR (mobile only) -->
+  <div class="mobile-bottom-bar">
+    <button class="mobile-bar-menu" id="mobileMenuBtn" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+      Menu
+    </button>
+    <button class="mobile-bar-search" aria-label="Search" onclick="document.getElementById('searchInput').focus(); document.getElementById('searchInput').scrollIntoView({behavior:'smooth'});">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="7"/>
+        <line x1="17" y1="17" x2="22" y2="22"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- SLIDE-UP MENU OVERLAY (mobile only) -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true">
+    <div class="mobile-menu-header">
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&#x2715;</button>
+      <span>Menu</span>
+    </div>
+    <a href="https://ddm.unibe.ch/index_eng.html" class="home-link">
+      <svg viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M8 2L2 7v7h4v-4h4v4h4V7L8 2z"/></svg>
+      Homepage
+      <span class="arrow-right">›</span>
+    </a>
+    <a href="https://ddm.unibe.ch/studies/index_eng.html">Studies <span class="arrow-right">›</span></a>
+    <a href="https://ddm.unibe.ch/research/index_eng.html" class="active">Research <span class="arrow-right">›</span></a>
+    <a href="https://ddm.unibe.ch/continuing_education/index_eng.html">Continuing Education <span class="arrow-right">›</span></a>
+    <a href="https://ddm.unibe.ch/news__events/news/index_eng.html">News &amp; Events <span class="arrow-right">›</span></a>
+    <a href="https://ddm.unibe.ch/about_us/index_eng.html">About us <span class="arrow-right">›</span></a>
+    <a href="https://ddm.unibe.ch/become_a_member/index_eng.html">Become a Member <span class="arrow-right">›</span></a>
+  </div>
+
+  <!-- JS -->
   <script src="js/app.js"></script>
 
 </body>

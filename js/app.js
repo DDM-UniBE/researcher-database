@@ -118,3 +118,40 @@ if (hamburgerBtn && greenNav) {
     });
   });
 }
+
+/* ── Mobile breadcrumb dropdown ── */
+const breadcrumbToggle = document.getElementById('breadcrumbToggle');
+const breadcrumbPanel  = document.getElementById('breadcrumbPanel');
+if (breadcrumbToggle && breadcrumbPanel) {
+  breadcrumbToggle.addEventListener('click', () => {
+    const isOpen = breadcrumbPanel.classList.toggle('open');
+    breadcrumbToggle.classList.toggle('open', isOpen);
+    breadcrumbToggle.setAttribute('aria-expanded', isOpen);
+  });
+}
+
+/* ── Mobile slide-up menu ── */
+const mobileMenuBtn     = document.getElementById('mobileMenuBtn');
+const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+const mobileMenuClose   = document.getElementById('mobileMenuClose');
+
+function openMobileMenu() {
+  mobileMenuOverlay.classList.add('open');
+  mobileMenuOverlay.setAttribute('aria-hidden', false);
+  document.body.style.overflow = 'hidden';
+}
+function closeMobileMenu() {
+  mobileMenuOverlay.classList.remove('open');
+  mobileMenuOverlay.setAttribute('aria-hidden', true);
+  document.body.style.overflow = '';
+}
+
+if (mobileMenuBtn)   mobileMenuBtn.addEventListener('click', openMobileMenu);
+if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+
+// Close when a nav link is tapped
+if (mobileMenuOverlay) {
+  mobileMenuOverlay.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+}
