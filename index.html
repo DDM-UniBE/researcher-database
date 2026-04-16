@@ -220,7 +220,8 @@
       outline: none;
       transition: border-color 0.15s;
     }
-    .filter-select:focus { border-color: #2e7d2e; }
+    .filter-select:focus { border-color: #C8102E; outline: 2px solid rgba(200,16,46,0.2); outline-offset: 0; }
+    .filter-select:hover { border-color: #C8102E; }
     .clear-btn {
       background: none;
       border: 1px solid #ddd;
@@ -262,7 +263,7 @@
       background: #ebebea;
       display: flex;
       flex-direction: column;
-      min-height: 300px;
+      min-height: 310px;
       cursor: pointer;
       transition: box-shadow 0.18s, transform 0.15s;
       text-decoration: none;
@@ -454,10 +455,53 @@
     .footer-bottom a { color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.15s; }
     .footer-bottom a:hover { color: white; }
 
+    /* ── HAMBURGER BUTTON — hidden on desktop ── */
+    .hamburger {
+      display: none;
+      background: #2e7d2e;
+      border: none;
+      cursor: pointer;
+      padding: 14px 18px;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      color: white;
+      font-family: inherit;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+    }
+    .hamburger-icon {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+    .hamburger-icon span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: white;
+      transition: all 0.25s;
+      transform-origin: center;
+    }
+    .hamburger.open .hamburger-icon span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open .hamburger-icon span:nth-child(2) { opacity: 0; }
+    .hamburger.open .hamburger-icon span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile nav drawer */
+    .green-nav {
+      background: #2e7d2e;
+      display: flex;
+      align-items: stretch;
+      overflow-x: auto;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 1100px) {
       .grid { grid-template-columns: repeat(2, 1fr); }
     }
+
     @media (max-width: 900px) {
       .inner { padding-left: 24px; padding-right: 24px; }
       .page-title h1 { font-size: 32px; }
@@ -465,16 +509,95 @@
       .hero { padding: 52px 32px 48px; }
       .grid { grid-template-columns: repeat(2, 1fr); }
     }
-    @media (max-width: 580px) {
-      .inner { padding-left: 20px; padding-right: 20px; }
-      .page-title h1 { font-size: 24px; }
-      .green-nav a { padding: 13px 14px; font-size: 14px; }
-      .hero { padding: 36px 20px 32px; }
-      .hero h2 { font-size: 24px; }
-      .hero p { font-size: 16px; }
-      .search-row { flex-direction: column; }
-      .search-row input, .search-btn { height: 52px; }
-      .grid { grid-template-columns: 1fr; }
+
+    @media (max-width: 640px) {
+      /* General */
+      body { font-size: 16px; }
+      .inner { padding-left: 16px; padding-right: 16px; }
+
+      /* Header — smaller logo */
+      .unibe-logo img { height: 52px; }
+      .header .inner { padding-top: 12px; padding-bottom: 12px; }
+
+      /* Breadcrumb — hide on mobile to save space */
+      .breadcrumb { display: none; }
+
+      /* Page title */
+      .page-title h1 { font-size: 22px; }
+      .page-title .inner { padding-top: 20px; padding-bottom: 16px; }
+
+      /* Hamburger — shown on mobile */
+      .hamburger { display: flex; }
+
+      /* Green nav — hidden by default, shown when open */
+      .green-nav-wrap .inner { padding-left: 0; padding-right: 0; }
+      .green-nav {
+        display: none;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      .green-nav.open { display: flex; }
+      .nav-home {
+        padding: 16px 20px;
+        justify-content: flex-start;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+      .green-nav a {
+        font-size: 17px;
+        padding: 16px 20px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        white-space: normal;
+      }
+      .green-nav a.active { background: rgba(255,255,255,0.15); color: white; }
+
+      /* Hero */
+      .hero-spacer { height: 12px; }
+      .hero { padding: 56px 20px 52px; }
+      .hero h2 { font-size: 22px; margin-bottom: 12px; }
+      .hero p { font-size: 15px; margin-bottom: 32px; }
+
+      /* Search bar — taller, stacked */
+      .search-row { flex-direction: column; max-width: 100%; }
+      .search-row input {
+        height: auto !important;
+        min-height: 72px;
+        padding: 20px 24px;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+      }
+      .search-btn {
+        height: auto !important;
+        min-height: 64px;
+        padding: 20px 32px;
+        font-size: 14px;
+        letter-spacing: 0.12em;
+        width: 100%;
+      }
+
+      /* Filters — stack vertically */
+      .filters-bar > div {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 10px !important;
+      }
+      .filter-select { width: 100%; font-size: 16px; padding: 12px 34px 12px 14px; }
+      .clear-btn { width: 100%; margin-left: 0 !important; text-align: center; padding: 12px; font-size: 14px; }
+      .filters-label { font-size: 12px; }
+
+      /* Cards — single column */
+      .grid { grid-template-columns: 1fr; gap: 14px; }
+      .card { min-height: 260px; }
+      .card-name { font-size: 17px; }
+      .card-group, .card-institute { font-size: 13px; }
+
+      /* Footer */
+      .footer .inner { flex-direction: column; padding-top: 36px; padding-bottom: 32px; gap: 20px; }
+      .footer-tagline { font-size: 22px; }
+      .footer-logo { align-items: flex-start; }
+      .footer-logo-ub { font-size: 40px; }
+      .footer-bottom .inner { flex-direction: column; align-items: flex-start; gap: 8px; }
     }
   </style>
 </head>
@@ -510,7 +633,14 @@
   <!-- GREEN NAV — constrained -->
   <div class="green-nav-wrap">
     <div class="inner">
-      <nav class="green-nav" aria-label="DDM navigation">
+      <!-- Hamburger toggle (mobile only) -->
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false">
+        <span>Menu</span>
+        <div class="hamburger-icon">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+      <nav class="green-nav" id="greenNav" aria-label="DDM navigation">
         <a href="https://ddm.unibe.ch/index_eng.html" class="nav-home" title="Home">
           <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M8 2L2 7v7h4v-4h4v4h4V7L8 2z" fill="white"/>
@@ -752,6 +882,25 @@
 
     document.getElementById('searchInput').addEventListener('input', applyFilters);
     renderGrid(researchers);
+
+    // Hamburger menu toggle
+    const btn = document.getElementById('hamburgerBtn');
+    const nav = document.getElementById('greenNav');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        btn.classList.toggle('open', isOpen);
+        btn.setAttribute('aria-expanded', isOpen);
+      });
+      // Close nav when a link is tapped on mobile
+      nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          btn.classList.remove('open');
+          btn.setAttribute('aria-expanded', false);
+        });
+      });
+    }
   </script>
 
 </body>
