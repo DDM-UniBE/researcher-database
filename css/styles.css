@@ -561,9 +561,10 @@ body {
   }
 
   /* Hero */
-  .hero { padding: 64px 20px 44px; }
+  .hero { padding: 48px 20px 44px; }
   .hero h2 { font-size: 22px; margin-bottom: 12px; }
   .hero p { font-size: 15px; margin-bottom: 32px; }
+  .hero-wrap { padding-top: 24px; }
 
   /* Search */
   .search-row { flex-direction: column; max-width: 100%; }
