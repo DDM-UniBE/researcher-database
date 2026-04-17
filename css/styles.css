@@ -417,7 +417,7 @@ body {
 .become-member-cta a::before {
   content: '⟶';
   display: inline-block;
-  transition: transform 0.2s ease;
+  transition: transform 0.35s ease;
   font-size: 25px;
 }
 .become-member-cta a:hover {   color: #1a1a1a; text-decoration: none; }
