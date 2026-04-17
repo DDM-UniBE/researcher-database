@@ -392,6 +392,31 @@ body {
   transition: border-color 0.15s, background 0.15s, color 0.15s;
   flex-shrink: 0;
 }
+.card-cta {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  color: #888;
+  letter-spacing: 0.02em;
+  padding: 10px 20px 14px;
+  border-top: 1px solid #dddcda;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.card-cta:hover { background: #f5f5f3; }
+.card-cta-link {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #C8102E;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.card-cta:hover { background: #f5f5f3; }
 .card-arrow svg { display: block; width: 18px; height: 18px; }
 .card:hover .card-arrow { border-color: #C8102E; background: #C8102E; color: white; }
 
