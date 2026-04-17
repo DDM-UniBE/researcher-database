@@ -606,7 +606,7 @@ body {
   .footer-tagline { font-size: 22px; }
   .footer-logo { align-items: flex-start; }
   .footer-bottom .inner { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .footer-logo img { height: 135px; max-height: 135px; }
+  .footer-logo img { height: 120px; max-height: 120px; }
 
   /* ── MOBILE BOTTOM BAR ── */
   .mobile-bottom-bar {
