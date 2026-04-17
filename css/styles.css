@@ -147,7 +147,7 @@ body {
   flex-shrink: 0;
 }
 .green-nav a:hover { background: rgba(255,255,255,0.1); }
-.green-nav a.active { background: #f0f0ee; color: #C8102E; }
+.green-nav a.active { background: #f0f0ee; color: #C8102E; font-weight: 350; }
 
 /* ── HERO — constrained, taller ── */
 .hero-wrap { background: white; padding-bottom: 40px; }
