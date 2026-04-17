@@ -440,7 +440,9 @@ body {
 }
 .footer-bottom {
   background: #2a2a28;
-  border-top: 1px solid rgba(255,255,255,0.12);
+  border-top: none;
+  margin: 0 32px;
+  border-top: 2px solid rgba(255,255,255,0.25);
 }
 .footer-bottom .inner {
   display: flex;
