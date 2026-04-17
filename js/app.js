@@ -94,12 +94,6 @@ function renderGrid(list) {
           ${photoEl}
           <div class="card-arrow">${arrowSVG}</div>
         </div>
-        <div class="card-cta">
-          Want to join our research community?
-          <a class="card-cta-link" href="https://ddm.unibe.ch/become_a_member/index_eng.html" target="_blank" onclick="event.stopPropagation()">
-            Become a DDM Member →
-          </a>
-        </div>
       </a>`;
   }).join('');
 }
