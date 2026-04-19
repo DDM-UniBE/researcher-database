@@ -3,10 +3,33 @@
    Edit this file to change colours, fonts, spacing.
    ═══════════════════════════════════════════════════ */
 
+/* ── FRUTIGER NEUE LT PRO — Web Fonts ── */
+@font-face {
+  font-family: 'Frutiger';
+  src: url('../assets/fonts/FrutigerNeueLTPro-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Frutiger';
+  src: url('../assets/fonts/FrutigerNeueLTPro-Roman.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Frutiger';
+  src: url('../assets/fonts/FrutigerNeueLTPro-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'Frutiger Neue LT Pro', 'Frutiger', 'Frutiger LT Std', Arial, sans-serif;
+  font-family: 'Frutiger', 'Frutiger Neue LT Pro', Arial, sans-serif;
   font-weight: 400;
   background: #f5f5f3;
   color: #1a1a1a;
@@ -136,7 +159,7 @@ body {
   color: white;
   text-decoration: none;
   font-size: 19px;
-  font-weight: 350;
+  font-weight: 400;
   letter-spacing: 0.025em;
   padding: 18px 28px;
   display: flex;
@@ -147,7 +170,7 @@ body {
   flex-shrink: 0;
 }
 .green-nav a:hover { background: rgba(255,255,255,0.1); }
-.green-nav a.active { background: #f0f0ee; color: #C8102E; font-weight: 350; }
+.green-nav a.active { background: #f0f0ee; color: #C8102E; font-weight: 400; }
 
 /* ── HERO — constrained, taller ── */
 .hero-wrap { background: white; padding-bottom: 40px; }
@@ -450,7 +473,7 @@ body {
 }
 .footer-tagline {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 600;
   color: white;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -588,7 +611,7 @@ body {
   .mobile-breadcrumb-panel a:last-child,
   .mobile-breadcrumb-panel a.panel-current {
     color: #888;
-    font-weight: 300;
+    font-weight: 400;
     border-bottom: none;
   }
 
