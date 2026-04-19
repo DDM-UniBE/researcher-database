@@ -97,7 +97,7 @@ body {
   transition: color 0.15s;
 }
 .breadcrumb .crumb:hover { color: #C8102E; }
-.breadcrumb .current { color: #C8102E; font-weight: 400; font-size: 15px; white-space: nowrap; text-decoration: none; transition: opacity 0.15s; }
+.breadcrumb .current { color: #C8102E; font-weight: 500; font-size: 15px; white-space: nowrap; text-decoration: none; transition: opacity 0.15s; }
 .breadcrumb .current:hover { opacity: 0.75; }
 
 /* ── PAGE TITLE ── */
