@@ -13,6 +13,13 @@
 }
 @font-face {
   font-family: 'Frutiger';
+  src: url('../assets/fonts/FrutigerNeueLTPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Frutiger';
   src: url('../assets/fonts/FrutigerNeueLTPro-Regular.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
@@ -98,7 +105,7 @@ body {
 .page-title .inner { padding-top: 32px; padding-bottom: 28px; }
 .page-title h1 {
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 300;
   color: #1a1a1a;
   letter-spacing: 0.01em;
   font-synthesis: none;
