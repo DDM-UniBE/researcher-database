@@ -73,14 +73,14 @@ body {
   padding-top: 22px;
   padding-bottom: 22px;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   color: #888;
   letter-spacing: 0.01em;
 }
 .breadcrumb .faculties {
   font-size: 15px;
   color: #888;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.45;
   white-space: nowrap;
   text-decoration: none;
@@ -261,7 +261,7 @@ body {
 .filters-label {
   font-size: 13px;
   font-weight: 400;
-  color: #999;
+  color: #777;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   white-space: nowrap;
