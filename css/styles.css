@@ -90,7 +90,7 @@ body {
 .breadcrumb .arrow { color: #C8102E; font-size: 11px; flex-shrink: 0; }
 .breadcrumb .crumb {
   color: #888;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   white-space: nowrap;
   text-decoration: none;
