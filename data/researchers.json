@@ -6,7 +6,7 @@
     "group": "Institute for Tissue Medicine and Pathology",
     "institute": "University of Bern",
     "area": "Digital Pathology",
-    "expertise": "Machine Learning",
+    "expertise": "",
     "tag": "Digital Pathology",
     "profileUrl": "https://www.igmp.unibe.ch/about_us/personen/zlobec_inti/index_eng.html"
   },
@@ -17,7 +17,7 @@
     "group": "Medical Image Analysis Group, ARTORG",
     "institute": "University of Bern",
     "area": "Biomedical Imaging",
-    "expertise": "Medical Imaging",
+    "expertise": "",
     "tag": "Biomedical Imaging",
     "profileUrl": "https://www.artorg.unibe.ch/research/mia/group_members/members/prof_dr_reyes_mauricio/index_eng.html"
   },
@@ -28,7 +28,7 @@
     "group": "Center of AI in Radiation Oncology, UKRO",
     "institute": "University of Bern · Inselspital",
     "area": "Radiation Oncology",
-    "expertise": "Clinical Trials",
+    "expertise": "",
     "tag": "Radiation Oncology",
     "profileUrl": "https://radioonkologie.insel.ch/de/ueber-uns/details/person/detail/sarah-brueningk"
   },
@@ -39,7 +39,7 @@
     "group": "Department of Radio-Oncology",
     "institute": "University of Bern · Inselspital · sitem-insel school",
     "area": "Data Science",
-    "expertise": "Biostatistics",
+    "expertise": "",
     "tag": "Data Science",
     "profileUrl": "https://www.medizin.unibe.ch/ueber_uns/personen/prof_dr_knopf_antje/index_ger.html"
   },
@@ -50,7 +50,7 @@
     "group": "Medical Data Science, Department of Clinical Research",
     "institute": "University of Bern",
     "area": "Data Science",
-    "expertise": "Machine Learning",
+    "expertise": "",
     "tag": "Data Science",
     "profileUrl": "https://dcr.unibe.ch/about_us/personen_all_dcr_staff/ineichen_benjamin/index_eng.html"
   },
@@ -61,7 +61,7 @@
     "group": "Institute for Diagnostic and Interventional Neuroradiology",
     "institute": "University of Bern · Inselspital",
     "area": "Neuroradiology",
-    "expertise": "Medical Imaging",
+    "expertise": "",
     "tag": "Neuroradiology",
     "profileUrl": "https://neurorad.insel.ch/de/ueber-uns/details/person/detail/roland-wiest"
   }
