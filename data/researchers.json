@@ -39,7 +39,7 @@
     "group": "Department of Radio-Oncology",
     "institute": "University of Bern · Inselspital · sitem-insel school",
     "area": "Radio-Oncology",
-    "expertise": "Clinical Specialities",
+    "expertise": "Clinical Specialities, Ethics, Policy & Education",
     "tag": "Radio-Oncology",
     "profileUrl": "https://www.medizin.unibe.ch/ueber_uns/personen/prof_dr_knopf_antje/index_ger.html"
   },
@@ -49,8 +49,8 @@
     "name": "Prof. Dr. Benjamin Ineichen",
     "group": "Medical Data Science, Department of Clinical Research",
     "institute": "University of Bern",
-    "area": "AI &amp; Data Science",
-    "expertise": "",
+    "area": "AI & Data Science",
+    "expertise": "AI & Data Science",
     "tag": "Data Science",
     "profileUrl": "https://dcr.unibe.ch/about_us/personen_all_dcr_staff/ineichen_benjamin/index_eng.html"
   },
